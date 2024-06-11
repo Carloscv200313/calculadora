@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="./estilos.css">
+    <link rel="icon" href="./ico.png" type="image/x-icon">
 </head>
 <body>
     <form name="calculadora" class="calculadora">
-        <input type="textfield" name="pantalla" id="pantalla" value="" autocomplete="off" readonly>
+        <input type="textfield" name="pantalla" id="pantalla" value="0" autocomplete="off" readonly>
         <div class="teclas">
-            <input type="button" value="7" onclick="document.calculadora.pantalla.value+='7' ">
-            <input type="button" value="8" onclick="document.calculadora.pantalla.value+='8' ">
-            <input type="button" value="9" onclick="document.calculadora.pantalla.value+='9' ">
-            <input type="button" value="/" onclick="document.calculadora.pantalla.value+='/' ">
-            <input type="button" value="4" onclick="document.calculadora.pantalla.value+='4' ">
-            <input type="button" value="5" onclick="document.calculadora.pantalla.value+='5' ">
-            <input type="button" value="6" onclick="document.calculadora.pantalla.value+='6' ">
-            <input type="button" value="x" onclick="document.calculadora.pantalla.value+='*' ">
-            <input type="button" value="1" onclick="document.calculadora.pantalla.value+='1' ">
-            <input type="button" value="2" onclick="document.calculadora.pantalla.value+='2' ">
-            <input type="button" value="3" onclick="document.calculadora.pantalla.value+='3' ">
-            <input type="button" value="-" onclick="document.calculadora.pantalla.value+='-' ">
-            <input type="button" value="0" onclick="document.calculadora.pantalla.value+='0' ">
+            <input type="button" value="7" onclick="escribir('7')">
+            <input type="button" value="8" onclick="escribir('8')">
+            <input type="button" value="9" onclick="escribir('9')">
+            <input type="button" value="/" onclick="escribir('/')">
+            <input type="button" value="4" onclick="escribir('4')">
+            <input type="button" value="5" onclick="escribir('5')">
+            <input type="button" value="6" onclick="escribir('6')">
+            <input type="button" value="x" onclick="escribir('*')">
+            <input type="button" value="1" onclick="escribir('1')">
+            <input type="button" value="2" onclick="escribir('2')">
+            <input type="button" value="3" onclick="escribir('3')">
+            <input type="button" value="-" onclick="escribir('-')">
+            <input type="button" value="0" onclick="escribir('0')">
             <input type="reset" value="C">
-            <input type="button" value="=" onclick="document.calculadora.pantalla.value=eval(document.calculadora.pantalla.value)">
-            <input type="button" value="+"onclick="document.calculadora.pantalla.value+='+' ">
+            <input type="button" value="=" onclick="calcular()">
+            <input type="button" value="+"onclick="escribir('+')">
         </div>
     </form>
     <script src="./scripts.js"></script>

@@ -46,6 +46,9 @@ input{
     font-size: 40px;
     cursor: pointer;
 }
+input:hover{
+    background-color: rgb(69, 186, 194);
+}
 @media (max-width: 425px) {
 .calculadora{
     height: 80%;
